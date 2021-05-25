@@ -48,6 +48,7 @@ class Bd{
         continue
       }
 
+      despesa.id = i;
       despesas.push(despesa)
     }
 
@@ -91,6 +92,10 @@ class Bd{
     }
 
     return despesasFiltradas
+  }
+
+  remover(id){
+    localStorage.removeItem(id)
   }
 
 
